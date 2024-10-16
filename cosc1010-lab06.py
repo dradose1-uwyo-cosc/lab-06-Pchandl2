@@ -1,8 +1,8 @@
-# Your Name Here
+# Peyton Chandler
 # UWYO COSC 1010
-# Submission Date
+# 10/15/2024
 # Lab 06
-# Lab Section: 
+# Lab Section: 11
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -70,6 +70,15 @@ print(len(random_string)) # Print out the size for reference
 # Output which letter occurred the most 
 # Output which letter occurred the least 
 # Output what the percentage of the string each character is, again in alphabetical
+character_count = {}
+
+for character in random_string:
+    if character in character_count:
+        character_count[character] += 1
+    else:
+    character_count[character] = 1
+
+organized_character_count = dict(sorted(character_count.items()))
 
 #Tips and trick:
 # You can iterate through strings like you would a list
