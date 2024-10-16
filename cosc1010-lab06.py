@@ -3,7 +3,7 @@
 # 10/15/2024
 # Lab 06
 # Lab Section: 11
-# Sources, people worked with, help given to: 
+# Sources, people worked with, help given to: Emmanuel TA
 # your
 # comments
 # here

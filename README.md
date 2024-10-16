@@ -2,7 +2,7 @@
 ## [Lab 6]
 ## [10/15/24]
 ## Worked with/sources 
-* example
+* Emmanuel TA
 * example
 * example
 * example
