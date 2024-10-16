@@ -76,9 +76,9 @@ for character in random_string:
     if character in character_count:
         character_count[character] += 1
     else:
-    character_count[character] = 1
+        character_count[character] = 1
 
-organized_character_count = dict(sorted(character_count.items()))
+
 
 #Tips and trick:
 # You can iterate through strings like you would a list
@@ -91,14 +91,16 @@ organized_character_count = dict(sorted(character_count.items()))
 
 #Load all the elements into a dictionary
 #Will need to first declare a dictionary 
+organized_character_count = dict(sorted(character_count.items()))
 
 # Output: each letter and its corresponding occurrence in alphabetical order
-
+print(organized_character_count)
 print("*"*75)
 # Output which letter occurred the most 
 
-most_occurred = ""
-least_occurred = ""
+
+most_occurred = max(organized_character_count, key = organized_character_count.get)
+least_occurred = min(organized_character_count, key = organized_character_count.get)
 
 print(f"The letter that occurred the most is {most_occurred}")
 print("*"*75)
@@ -107,3 +109,10 @@ print(f"The letter that occurred the most is {least_occurred}")
 print("*"*75)
 
 # Output what the percentage of the string each character is, again in alphabetical
+string_length = len(random_string)
+for character in organized_character_count:
+    organized_character_count[character] / string_length *100
+    print(character, organized_character_count[character] / string_length *100)
+
+
+
